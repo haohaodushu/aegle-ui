@@ -1,0 +1,5 @@
+/dist/*
+/public/*
+/docs/*
+/lib/*
+/styles/**

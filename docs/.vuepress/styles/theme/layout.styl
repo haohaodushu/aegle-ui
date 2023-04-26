@@ -1,0 +1,26 @@
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B0B8CF;
+}
+
+.hide-in-mobile {
+  @media (max-width: $MQMobile) {
+    display: none !important;
+  }
+}
+
+.hide-in-pad {
+  @media (max-width: $MQNarrow) {
+    display: none !important;
+  }
+}
