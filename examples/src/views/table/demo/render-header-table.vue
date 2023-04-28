@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>自定义表头</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" />
+    <aegle-table :column="tableData.column" :data="tableData.data" />
   </div>
 </template>
 

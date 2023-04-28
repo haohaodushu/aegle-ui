@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>排序</h2>
-    <dl-table
+    <aegle-table
       ref="multipleTable"
       :column="tableData.column"
       :data="tableData.data"

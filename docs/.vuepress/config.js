@@ -48,7 +48,7 @@ module.exports = config({
       },
       {
         text: '业务组件',
-        link: '/packages/business/rich-text'
+        link: '/packages/business/tag'
       }
     ],
     locales: {

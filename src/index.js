@@ -19,14 +19,16 @@ import AegleInput from 'packages/element-ui/input/index.js'
 import AegleAutocomplete from 'packages/element-ui/autocomplete/index.js'
 import AegleTable from 'packages/element-ui/table/index.js'
 import AegleTableColumn from 'packages/element-ui/table-column/index.js'
+import AegleAlert from 'packages/element-ui/alert/index.js'
 
 
 import Dialog from 'packages/element-ui/dialog/index.js'
 import Drawer from 'packages/element-ui/drawer/index.js'
 import Tooltip from 'packages/element-ui/tooltip/index.js'
 import AegleSelect from 'packages/element-ui/select/index.js'
-import Tag from 'packages/element-ui/tag/index.js'
-import TagGroup from 'packages/element-ui/tag-group/index.js'
+
+import AegleTag from 'packages/business/tag/index'
+import AegleResult from 'packages/business/result/index'
 
 const components = [
   AegleButton,
@@ -46,13 +48,12 @@ const components = [
   AegleCascaderPanel,
   AegleTable,
   AegleTableColumn,
+  AegleAlert,
   Dialog,
   Drawer,
   Tooltip,
-
-  Tag,
-  TagGroup,
-
+  AegleTag,
+  AegleResult,
 ]
 
 const install = (Vue, options = {}) => {

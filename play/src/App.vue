@@ -1,7 +1,7 @@
 <template>
 	<div>
     <el-button>hello</el-button>
-    <aegle-button><i class="dl-icon-shezhi"></i>斗罗 ZUI</aegle-button>
+    <aegle-button><i class="aegle-icon-shezhi"></i>斗罗 ZUI</aegle-button>
     <!-- <d-button></d-button>
     <d-radio></d-radio>
     <d-table></d-table> -->
@@ -25,7 +25,7 @@ const el = document.documentElement
 // const el = document.getElementById('xxx')
 
 // 获取 css 变量
-getComputedStyle(el).getPropertyValue(`--dl-color-primary`)
+getComputedStyle(el).getPropertyValue(`--aegle-color-primary`)
 
 // 设置 css 变量
 el.style.setProperty('--color-primary', 'red')

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>带状态表格</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" :row-class-name="tableRowClassName" />
+    <aegle-table :column="tableData.column" :data="tableData.data" :row-class-name="tableRowClassName" />
   </div>
 </template>
 

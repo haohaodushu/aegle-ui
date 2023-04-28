@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>弹窗形式表格编辑</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" />
+    <aegle-table :column="tableData.column" :data="tableData.data" />
 
     <el-dialog :visible.sync="dialogVisible" title="编辑" append-to-body>
       <div class="dialog-content">

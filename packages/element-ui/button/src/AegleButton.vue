@@ -1,10 +1,25 @@
 <template>
-  <el-button class="aegle-button" v-bind="$attrs" v-on="$listeners"><slot /></el-button>
+  <el-button :style="computedBorderStyle" class="aegle-button" v-bind="$attrs" v-on="$listeners"><slot /></el-button>
 </template>
 
 <script>
 export default {
-  name: 'AegleButton'
+  name: 'AegleButton',
+  props: {
+    borderStyle: {
+      type: String,
+      default: ""
+    }
+  },
+  computed: {
+    computedBorderStyle() {
+       if(this.borderStyle) {
+        return {
+          borderStyle: this.borderStyle
+        }
+       }
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>流体高度</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" max-height="250" />
+    <aegle-table :column="tableData.column" :data="tableData.data" max-height="250" />
   </div>
 </template>
 

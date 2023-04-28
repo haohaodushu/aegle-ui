@@ -10,29 +10,29 @@
 
     <aegle-button @click="drawer = true" type="primary" style="margin-left: 16px"> 点我打开 </aegle-button>
 
-    <dl-drawer title="我是标题" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
+    <aegle-drawer title="我是标题" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
       <span>我来啦!</span>
-    </dl-drawer>
+    </aegle-drawer>
 
     <h2>不添加 Title</h2>
     <aegle-button @click="drawer1 = true" type="primary" style="margin-left: 16px"> 点我打开 </aegle-button>
 
-    <dl-drawer title="我是标题" :visible.sync="drawer1" :with-header="false">
+    <aegle-drawer title="我是标题" :visible.sync="drawer1" :with-header="false">
       <span>我来啦!</span>
-    </dl-drawer>
+    </aegle-drawer>
 
     <h2>自定义内容</h2>
     <aegle-button type="text" @click="table = true">打开嵌套表格的 Drawer</aegle-button>
     <aegle-button type="text" @click="dialog = true">打开嵌套 Form 的 Drawer</aegle-button>
-    <dl-drawer title="我嵌套了表格!" :visible.sync="table" direction="rtl" size="50%">
-      <dl-table :data="gridData">
-        <dl-table-column property="date" label="日期" width="150" />
-        <dl-table-column property="name" label="姓名" width="200" />
-        <dl-table-column property="address" label="地址" />
-      </dl-table>
-    </dl-drawer>
+    <aegle-drawer title="我嵌套了表格!" :visible.sync="table" direction="rtl" size="50%">
+      <aegle-table :data="gridData">
+        <aegle-table-column property="date" label="日期" width="150" />
+        <aegle-table-column property="name" label="姓名" width="200" />
+        <aegle-table-column property="address" label="地址" />
+      </aegle-table>
+    </aegle-drawer>
 
-    <dl-drawer
+    <aegle-drawer
       title="我嵌套了 Form !"
       :before-close="handleClose"
       :visible.sync="dialog"
@@ -41,17 +41,17 @@
       ref="drawer"
     >
       <div class="demo-drawer__content">
-        <dl-form :model="form">
-          <dl-form-item label="活动名称" :labdl-width="formLabelWidth">
+        <aegle-form :model="form">
+          <aegle-form-item label="活动名称" :labaegle-width="formLabelWidth">
             <aegle-input v-model="form.name" autocomplete="off" />
-          </dl-form-item>
-          <dl-form-item label="活动区域" :labdl-width="formLabelWidth">
+          </aegle-form-item>
+          <aegle-form-item label="活动区域" :labaegle-width="formLabelWidth">
             <aegle-select v-model="form.region" placeholder="请选择活动区域">
-              <dl-option label="区域一" value="shanghai" />
-              <dl-option label="区域二" value="beijing" />
+              <aegle-option label="区域一" value="shanghai" />
+              <aegle-option label="区域二" value="beijing" />
             </aegle-select>
-          </dl-form-item>
-        </dl-form>
+          </aegle-form-item>
+        </aegle-form>
         <div class="demo-drawer__footer">
           <aegle-button @click="cancelForm">取 消</aegle-button>
           <aegle-button type="primary" @click="$refs.drawer.closeDrawer()" :loading="loading">{{
@@ -59,19 +59,19 @@
           }}</aegle-button>
         </div>
       </div>
-    </dl-drawer>
+    </aegle-drawer>
 
     <h2>多层嵌套</h2>
     <aegle-button @click="drawer2 = true" type="primary" style="margin-left: 16px"> 点我打开 </aegle-button>
 
-    <dl-drawer title="我是外面的 Drawer" :visible.sync="drawer2" size="50%">
+    <aegle-drawer title="我是外面的 Drawer" :visible.sync="drawer2" size="50%">
       <div>
         <aegle-button @click="innerDrawer = true">打开里面的!</aegle-button>
-        <dl-drawer title="我是里面的" :append-to-body="true" :before-close="handleClose" :visible.sync="innerDrawer">
+        <aegle-drawer title="我是里面的" :append-to-body="true" :before-close="handleClose" :visible.sync="innerDrawer">
           <p>_(:зゝ∠)_</p>
-        </dl-drawer>
+        </aegle-drawer>
       </div>
-    </dl-drawer>
+    </aegle-drawer>
   </div>
 </template>
 

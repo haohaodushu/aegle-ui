@@ -1,11 +1,11 @@
 <template>
   <div>
     <h2>表格对齐</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" border align="center" />
+    <aegle-table :column="tableData.column" :data="tableData.data" border align="center" />
 
-    <dl-table :column="tableData.column2" :data="tableData.data" border align="center" style="margin-top: 20px" />
+    <aegle-table :column="tableData.column2" :data="tableData.data" border align="center" style="margin-top: 20px" />
 
-    <dl-table
+    <aegle-table
       :column="tableData.column3"
       :data="tableData.data"
       border

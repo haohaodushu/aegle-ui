@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>表格分页</h2>
-    <dl-table
+    <aegle-table
       v-loading="loading"
       :column="tableData.column"
       :data="tableData.data"

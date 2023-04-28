@@ -2,7 +2,7 @@
   <div>
     <h3>固定时间点</h3>
     <h4>提供几个固定的时间点供用户选择</h4>
-    <dl-time-picker
+    <aegle-time-picker
       v-model="value"
       :is-fixed-time="true"
       :picker-options="{

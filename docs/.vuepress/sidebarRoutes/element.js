@@ -89,12 +89,6 @@ module.exports = [
     collapsable: false,
     children: [
       {
-        title: 'Alert 警告',
-        collapsable: false,
-        path: '/packages/element/alert',
-      },
-
-      {
         title: 'MessageBox 弹框',
         collapsable: false,
         path: '/packages/element/message-box',

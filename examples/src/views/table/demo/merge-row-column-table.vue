@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>合并行或列</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" :span-method="arraySpanMethod" border />
+    <aegle-table :column="tableData.column" :data="tableData.data" :span-method="arraySpanMethod" border />
 
-    <dl-table
+    <aegle-table
       :column="tableData.column"
       :data="tableData.data"
       :span-method="objectSpanMethod"

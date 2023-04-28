@@ -3,70 +3,70 @@
     <h2>基本用法</h2>
     <div class="box">
       <div class="top">
-        <dl-tooltip class="item" effect="dark" content="Top Left 提示文字" placement="top-start">
+        <aegle-tooltip class="item" effect="dark" content="Top Left 提示文字" placement="top-start">
           <aegle-button>上左</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Top Center 提示文字" placement="top">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Top Center 提示文字" placement="top">
           <aegle-button>上边</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Top Right 提示文字" placement="top-end">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Top Right 提示文字" placement="top-end">
           <aegle-button>上右</aegle-button>
-        </dl-tooltip>
+        </aegle-tooltip>
       </div>
       <div class="left">
-        <dl-tooltip class="item" effect="dark" content="Left Top 提示文字" placement="left-start">
+        <aegle-tooltip class="item" effect="dark" content="Left Top 提示文字" placement="left-start">
           <aegle-button>左上</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Left Center 提示文字" placement="left">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Left Center 提示文字" placement="left">
           <aegle-button>左边</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Left Bottom 提示文字" placement="left-end">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Left Bottom 提示文字" placement="left-end">
           <aegle-button>左下</aegle-button>
-        </dl-tooltip>
+        </aegle-tooltip>
       </div>
 
       <div class="right">
-        <dl-tooltip class="item" effect="dark" content="Right Top 提示文字" placement="right-start">
+        <aegle-tooltip class="item" effect="dark" content="Right Top 提示文字" placement="right-start">
           <aegle-button>右上</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Right Center 提示文字" placement="right">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Right Center 提示文字" placement="right">
           <aegle-button>右边</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Right Bottom 提示文字" placement="right-end">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Right Bottom 提示文字" placement="right-end">
           <aegle-button>右下</aegle-button>
-        </dl-tooltip>
+        </aegle-tooltip>
       </div>
       <div class="bottom">
-        <dl-tooltip class="item" effect="dark" content="Bottom Left 提示文字" placement="bottom-start">
+        <aegle-tooltip class="item" effect="dark" content="Bottom Left 提示文字" placement="bottom-start">
           <aegle-button>下左</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Bottom Center 提示文字" placement="bottom">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Bottom Center 提示文字" placement="bottom">
           <aegle-button>下边</aegle-button>
-        </dl-tooltip>
-        <dl-tooltip class="item" effect="dark" content="Bottom Right 提示文字" placement="bottom-end">
+        </aegle-tooltip>
+        <aegle-tooltip class="item" effect="dark" content="Bottom Right 提示文字" placement="bottom-end">
           <aegle-button>下右</aegle-button>
-        </dl-tooltip>
+        </aegle-tooltip>
       </div>
     </div>
 
     <h2>主题</h2>
-    <dl-tooltip content="Top center" placement="top">
+    <aegle-tooltip content="Top center" placement="top">
       <aegle-button>Dark</aegle-button>
-    </dl-tooltip>
-    <dl-tooltip content="Bottom center" placement="bottom" effect="light">
+    </aegle-tooltip>
+    <aegle-tooltip content="Bottom center" placement="bottom" effect="light">
       <aegle-button>Light</aegle-button>
-    </dl-tooltip>
+    </aegle-tooltip>
 
     <h2>更多 Content</h2>
-    <dl-tooltip placement="top">
+    <aegle-tooltip placement="top">
       <div slot="content">多行信息<br/>第二行信息</div>
       <aegle-button>Top center</aegle-button>
-    </dl-tooltip>
+    </aegle-tooltip>
 
     <h2>高级扩展</h2>
-    <dl-tooltip :disabled="disabled" content="点击关闭 tooltip 功能" placement="bottom" effect="light">
+    <aegle-tooltip :disabled="disabled" content="点击关闭 tooltip 功能" placement="bottom" effect="light">
       <aegle-button @click="disabled = !disabled">点击{{disabled ? '开启' : '关闭'}} tooltip 功能</aegle-button>
-    </dl-tooltip>
+    </aegle-tooltip>
   </div>
 </template>
 
@@ -141,8 +141,8 @@ export default {
       margin: 4px;
     }
 
-    .left .dl-tooltip__popper,
-    .right .dl-tooltip__popper {
+    .left .aegle-tooltip__popper,
+    .right .aegle-tooltip__popper {
       padding: 8px 10px;
     }
   }

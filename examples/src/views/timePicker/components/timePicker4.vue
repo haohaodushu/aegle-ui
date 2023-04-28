@@ -2,7 +2,7 @@
   <div>
     <h3>任意时间范围</h3>
     <h4>可选择任意的时间范围</h4>
-    <dl-time-picker
+    <aegle-time-picker
       is-range
       v-model="value1"
       range-separator="至"
@@ -10,7 +10,7 @@
       end-placeholder="结束时间"
       placeholder="选择时间范围"
     />
-    <dl-time-picker
+    <aegle-time-picker
       is-range
       arrow-control
       v-model="value2"

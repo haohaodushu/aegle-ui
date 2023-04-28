@@ -1,7 +1,6 @@
 ---
 title: Tooltip 文字提示
 pageClass: demo-popover
-icon: new
 ---
 
 常用于展示鼠标 hover 时的提示信息。
@@ -15,49 +14,49 @@ icon: new
 ```html
 <div class="box">
   <div class="top">
-    <aegletooltip class="item" effect="dark" content="Top Left 提示文字" placement="top-start">
+    <el-tooltip class="item" manual value="true" effect="dark" content="Top Left 提示文字" placement="top-start">
       <aegle-button>上左</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Top Center 提示文字" placement="top">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Top Center 提示文字" placement="top">
       <aegle-button>上边</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Top Right 提示文字" placement="top-end">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Top Right 提示文字" placement="top-end">
       <aegle-button>上右</aegle-button>
-    </aegletooltip>
+    </el-tooltip>
   </div>
   <div class="left">
-    <aegletooltip class="item" effect="dark" content="Left Top 提示文字" placement="left-start">
+    <el-tooltip class="item" effect="dark" content="Left Top 提示文字" placement="left-start">
       <aegle-button>左上</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Left Center 提示文字" placement="left">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Left Center 提示文字" placement="left">
       <aegle-button>左边</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Left Bottom 提示文字" placement="left-end">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Left Bottom 提示文字" placement="left-end">
       <aegle-button>左下</aegle-button>
-    </aegletooltip>
+    </el-tooltip>
   </div>
 
   <div class="right">
-    <aegletooltip class="item" effect="dark" content="Right Top 提示文字" placement="right-start">
+    <el-tooltip class="item" effect="dark" content="Right Top 提示文字" placement="right-start">
       <aegle-button>右上</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Right Center 提示文字" placement="right">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Right Center 提示文字" placement="right">
       <aegle-button>右边</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Right Bottom 提示文字" placement="right-end">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Right Bottom 提示文字" placement="right-end">
       <aegle-button>右下</aegle-button>
-    </aegletooltip>
+    </el-tooltip>
   </div>
   <div class="bottom">
-    <aegletooltip class="item" effect="dark" content="Bottom Left 提示文字" placement="bottom-start">
+    <el-tooltip class="item" effect="dark" content="Bottom Left 提示文字" placement="bottom-start">
       <aegle-button>下左</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Bottom Center 提示文字" placement="bottom">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Bottom Center 提示文字" placement="bottom">
       <aegle-button>下边</aegle-button>
-    </aegletooltip>
-    <aegletooltip class="item" effect="dark" content="Bottom Right 提示文字" placement="bottom-end">
+    </el-tooltip>
+    <el-tooltip class="item" effect="dark" content="Bottom Right 提示文字" placement="bottom-end">
       <aegle-button>下右</aegle-button>
-    </aegletooltip>
+    </el-tooltip>
   </div>
 </div>
 
@@ -104,12 +103,12 @@ Tooltip 组件提供了两个不同的主题：`dark`和`light`。
 
 :::demo 通过设置`effect`属性来改变主题，默认为`dark`。
 ```html
-<aegletooltip content="Top center" placement="top">
+<el-tooltip content="Top center" placement="top">
   <aegle-button>Dark</aegle-button>
-</aegletooltip>
-<aegletooltip content="Bottom center" placement="bottom" effect="light">
+</el-tooltip>
+<el-tooltip content="Bottom center" placement="bottom" effect="light">
   <aegle-button>Light</aegle-button>
-</aegletooltip>
+</el-tooltip>
 ```
 :::
 
@@ -119,10 +118,10 @@ Tooltip 组件提供了两个不同的主题：`dark`和`light`。
 
 :::demo 用具名 slot 分发`content`，替代`tooltip`中的`content`属性。
 ```html
-<aegletooltip placement="top">
+<el-tooltip placement="top">
   <div slot="content">多行信息<br/>第二行信息</div>
   <aegle-button>Top center</aegle-button>
-</aegletooltip>
+</el-tooltip>
 ```
 :::
 
@@ -139,9 +138,9 @@ Tooltip 组件提供了两个不同的主题：`dark`和`light`。
 :::demo
 ```html
 <template>
-  <aegletooltip :disabled="disabled" content="点击关闭 tooltip 功能" placement="bottom" effect="light">
+  <el-tooltip :disabled="disabled" content="点击关闭 tooltip 功能" placement="bottom" effect="light">
     <aegle-button @click="disabled = !disabled">点击{{disabled ? '开启' : '关闭'}} tooltip 功能</aegle-button>
-  </aegletooltip>
+  </el-tooltip>
 </template>
 <script>
   export default {

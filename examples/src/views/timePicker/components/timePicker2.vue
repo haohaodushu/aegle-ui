@@ -2,14 +2,14 @@
   <div>
     <h3>任意时间点</h3>
     <h4>可以选择任意时间</h4>
-    <dl-time-picker
+    <aegle-time-picker
       v-model="value1"
       :picker-options="{
         selectableRange: '18:30:00 - 20:30:00'
       }"
       placeholder="任意时间点"
     />
-    <dl-time-picker
+    <aegle-time-picker
       arrow-control
       v-model="value2"
       :picker-options="{

@@ -12,8 +12,6 @@ export default {
     // const el = document.documentElement
     // const el = document.getElementById('xxx')
 
-    // 获取 css 变量
-    // getComputedStyle(el).getPropertyValue(`--dl-color-primary`)
 
     // 设置 css 变量
     // el.style.setProperty('--color-primary', 'red')

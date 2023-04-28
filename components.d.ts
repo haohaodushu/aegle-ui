@@ -5,6 +5,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ElAlert: typeof import('element-ui/lib/alert')['default']
     ElAutocomplete: typeof import('element-ui/lib/autocomplete')['default']
     ElButton: typeof import('element-ui/lib/button')['default']
     ElButtonGroup: typeof import('element-ui/lib/button-group')['default']

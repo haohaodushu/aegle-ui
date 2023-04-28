@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>基础表格</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" border>
+    <aegle-table :column="tableData.column" :data="tableData.data" border>
       <div slot="options" slot-scope="scope" class="options">
           <aegle-button size="mini" type="primary" ghost>预览</aegle-button>
           <aegle-button size="mini" class="mt-10" ghost>查看留言</aegle-button>
@@ -9,7 +9,7 @@
               {{ scope.row.linksInfo ? '已屏蔽' : '屏蔽' }}
           </aegle-button>
       </div>
-    </dl-table>
+    </aegle-table>
   </div>
 </template>
 

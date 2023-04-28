@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>多级表头</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" height="450" />
+    <aegle-table :column="tableData.column" :data="tableData.data" height="450" />
   </div>
 </template>
 

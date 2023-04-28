@@ -4,7 +4,7 @@
     <el-row>
       <aegle-button icon="&#xe60f;">默认按钮</aegle-button>
       <aegle-button type="primary">主要按钮</aegle-button>
-      <aegle-button icon="dl-icon-lock" type="success">成功按钮</aegle-button>
+      <aegle-button icon="aegle-icon-lock" type="success">成功按钮</aegle-button>
       <aegle-button type="info">信息按钮</aegle-button>
       <aegle-button type="warning">警告按钮</aegle-button>
       <aegle-button type="danger">危险按钮</aegle-button>

@@ -3,7 +3,7 @@
     <h2>筛选</h2>
     <el-button @click="resetDateFilter">清除日期过滤器</el-button>
     <el-button @click="clearFilter">清除所有过滤器</el-button>
-    <dl-table ref="filterTable" :column="tableData.column" :data="tableData.data" />
+    <aegle-table ref="filterTable" :column="tableData.column" :data="tableData.data" />
   </div>
 </template>
 

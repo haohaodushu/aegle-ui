@@ -2,3 +2,8 @@ $--background-color-base: rgba(0,0,0,0.04);
 @import url('./src/theme/theme/index.css');
 @import url('./el-table.scss');
 
+
+.el-tooltip__popper.is-dark {
+    background: rgba(0,0,0,0.80);
+}
+

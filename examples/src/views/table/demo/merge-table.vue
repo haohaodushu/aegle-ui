@@ -1,14 +1,14 @@
 <template>
   <div>
     <h2>表格动态合并</h2>
-    <dl-table
+    <aegle-table
       :column="tableData.column"
       :data="tableData.data"
       :merge="['name', 'proportion', 'material', 'value3']"
       border
     />
 
-    <dl-table
+    <aegle-table
       :column="tableData2.column"
       :data="tableData2.data"
       :merge="['name', 'proportion']"

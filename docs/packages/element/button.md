@@ -200,6 +200,19 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 :::
 
+### 不同边框样式
+
+
+
+:::demo 提供 borderStyle 属性来设置按钮的边框样式。
+
+```html
+  <aegle-button borderStyle="dashed">默认按钮</aegle-button>
+
+```
+:::
+
+
 ### Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
@@ -208,6 +221,7 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 | plain     | 是否朴素按钮   | boolean    | — | false   |
 | round     | 是否圆角按钮   | boolean    | — | false   |
 | circle     | 是否圆形按钮   | boolean    | — | false   |
+| borderStyle     | 边框样式   | string    | — | — |
 | loading     | 是否加载中状态   | boolean    | — | false   |
 | disabled  | 是否禁用状态    | boolean   | —   | false   |
 | icon  | 图标类名 | string   |  —  |  —  |

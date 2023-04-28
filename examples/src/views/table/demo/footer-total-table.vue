@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>表尾合计行</h2>
-    <dl-table :column="tableData.column" :data="tableData.data" border show-summary />
+    <aegle-table :column="tableData.column" :data="tableData.data" border show-summary />
 
-    <dl-table
+    <aegle-table
       :column="tableData.column"
       :data="tableData.data"
       :summary-method="getSummaries"

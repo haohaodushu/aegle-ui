@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>树形数据与懒加载</h2>
-    <dl-table
+    <aegle-table
       :column="tableData1.column"
       :data="tableData1.data"
       border
@@ -11,7 +11,7 @@
       :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
     />
     <br />
-    <dl-table
+    <aegle-table
       :column="tableData1.column"
       :data="tableData2.data"
       row-key="id"

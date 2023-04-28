@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>单选</h2>
-    <dl-table
+    <aegle-table
       ref="lbTable"
       highlight-current-row
       :column="tableData.column"

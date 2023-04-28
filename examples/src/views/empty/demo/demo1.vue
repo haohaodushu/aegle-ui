@@ -1,19 +1,25 @@
 <template>
   <div class="demo-input">
-    <h2>基础用法</h2>
-
-    <dl-empty description="描述文字" />
-
-    <h2>自定义图片</h2>
-    <dl-empty image="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" />
-
-    <h2>图片尺寸</h2>
-    <dl-empty :image-size="200" />
-
-    <h2>底部内容</h2>
-    <dl-empty>
-      <aegle-button type="primary">按钮</aegle-button>
-    </dl-empty>
+    <aegle-alert
+    title="成功提示的文案"
+    type="success"
+    show-icon>
+  </aegle-alert>
+  <aegle-alert
+    title="消息提示的文案"
+    type="info"
+    show-icon>
+  </aegle-alert>
+  <aegle-alert
+    title="警告提示的文案"
+    type="warning"
+    show-icon>
+  </aegle-alert>
+  <aegle-alert
+    title="错误提示的文案"
+    type="error"
+    show-icon>
+  </aegle-alert>
 
   </div>
 </template>

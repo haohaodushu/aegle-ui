@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>带边框表格</h2>
-    <dl-table border :column="tableData.column" :data="tableData.data" />
+    <aegle-table border :column="tableData.column" :data="tableData.data" />
   </div>
 </template>
 

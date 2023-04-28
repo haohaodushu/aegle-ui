@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>带斑马纹表格</h2>
-    <dl-table stripe :column="tableData.column" :data="tableData.data" />
+    <aegle-table stripe :column="tableData.column" :data="tableData.data" />
   </div>
 </template>
 
