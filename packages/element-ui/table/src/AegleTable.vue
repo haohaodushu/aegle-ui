@@ -1,5 +1,5 @@
 <template>
-  <el-table class="aegle-table" v-bind="$attrs" v-on="$listeners">
+  <el-table class="aegle-table" :class="[clazz]" v-bind="$attrs" v-on="$listeners">
     <slot />
     <template #append>
       <slot name="append" />
@@ -9,7 +9,18 @@
 
 <script>
 export default {
-    name: "AegleTable"
+    name: "AegleTable",
+    props: {
+        size: String
+    },
+    computed: {
+        clazz() {
+            if(this.size) {
+                return this.size + '-table'
+            }
+            return null
+        }
+    }
 }
 </script>
 

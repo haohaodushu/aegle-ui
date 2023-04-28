@@ -4,7 +4,6 @@ import { updateUITheme } from './utils/update-ui-theme.js'
 
 // 注册组件
 import AegleButton from 'packages/element-ui/button/index.js'
-import Icon from 'packages/element-ui/icon/index.js'
 import AegleDatePicker from 'packages/element-ui/date-picker/index.js'
 import AegleTimeSelect from 'packages/element-ui/time-select/index.js'
 import AegleTimePicker from 'packages/element-ui/time-picker/index.js'
@@ -31,7 +30,6 @@ import TagGroup from 'packages/element-ui/tag-group/index.js'
 
 const components = [
   AegleButton,
-  Icon,
   AegleDatePicker,
   AegleTimePicker,
   AegleTimeSelect,

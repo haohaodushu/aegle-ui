@@ -1,0 +1,119 @@
+.el-table {
+
+    color: rgba(0, 0, 0, 0.7);
+
+    .el-table__header-wrapper .el-table__header tr th {
+        padding-top: 11px;
+        padding-bottom: 10px;
+
+        background-color: #f3f4f8;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.9);
+        letter-spacing: 0.21px;
+
+        .cell {
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .el-table__body-wrapper .el-table__body tr td {
+        height: 54px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .cell {
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            line-height: unset;
+        }
+    }
+}
+
+.el-table th.el-table__cell>.cell,
+.el-table .el-table-column--selection .cell,
+.el-table th>.cell {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #e9f3fe;
+}
+
+.el-table .el-table__row.is-selected-tr {
+    background-color: #E9F3FE;
+}
+
+
+.el-table {
+    .dot {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+        border-radius: 50%;
+
+        &.pending {
+            background: #969da8;
+        }
+
+        &.completed {
+            background: #2eb16e;
+        }
+
+        &.fill {
+            background: #ff9503;
+        }
+
+        &.check {
+            background: #eb2f96;
+        }
+
+        &.cancel {
+            background: #9341ff;
+        }
+
+        &.complete {
+            background: #2eb16e;
+        }
+    }
+
+}
+
+.small-table.el-table {
+    .el-table__header-wrapper .el-table__header tr th {
+        padding-top: 7px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: 0.2px;
+
+        .cell {
+            height: 18px;
+            line-height: 18px;
+        }
+    }
+
+
+
+    .el-table__body-wrapper .el-table__body tr td {
+        height: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 13px;
+
+        .cell {
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            line-height: unset;
+        }
+    }
+}

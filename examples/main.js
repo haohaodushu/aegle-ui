@@ -6,9 +6,6 @@ import router from './src/router/index.js'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-// 本地安装组件测试的包
-// import AegleUI from 'douluo-ui'
-// import 'douluo-ui/lib/theme/index.css'
 
 import AegleUI from '../src/index.js'
 // import '../styles/src/index.scss'

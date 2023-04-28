@@ -1,9 +1,9 @@
 {
-  "name": "douluo-ui",
-  "version": "1.1.0",
+  "name": "aegle-ui",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "module": "lib/index.js",
-  "description": "douluo-ui Vue2组件库",
+  "description": "aegle-ui Vue2组件库",
   "keywords": [
     "vue",
     "element-ui"

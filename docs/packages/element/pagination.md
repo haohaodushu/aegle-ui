@@ -12,17 +12,17 @@ icon: new
 ```html
 <div class="block">
   <span class="demonstration">页数较少时的效果</span>
-  <dl-pagination
+  <aeglepagination
     layout="prev, pager, next"
     :total="50">
-  </dl-pagination>
+  </aeglepagination>
 </div>
 <div class="block">
   <span class="demonstration">大于 7 页时的效果</span>
-  <dl-pagination
+  <aeglepagination
     layout="prev, pager, next"
     :total="1000">
-  </dl-pagination>
+  </aeglepagination>
 </div>
 ```
 :::
@@ -31,12 +31,12 @@ icon: new
 
 :::demo 默认情况下，当总页数超过 7 页时，Pagination 会折叠多余的页码按钮。通过`pager-count`属性可以设置最大页码按钮数。
 ```html
-<dl-pagination
+<aeglepagination
   :page-size="20"
   :pager-count="11"
   layout="prev, pager, next"
   :total="1000">
-</dl-pagination>
+</aeglepagination>
 ```
 :::
 
@@ -44,11 +44,11 @@ icon: new
 
 :::demo 设置`background`属性可以为分页按钮添加背景色。
 ```html
-<dl-pagination
+<aeglepagination
   background
   layout="prev, pager, next"
   :total="1000">
-</dl-pagination>
+</aeglepagination>
 ```
 :::
 
@@ -58,11 +58,11 @@ icon: new
 
 :::demo 只需要一个`small`属性，它接受一个`Boolean`，默认为`false`，设为`true`即可启用。
 ```html
-<dl-pagination
+<aeglepagination
   small
   layout="prev, pager, next"
   :total="50">
-</dl-pagination>
+</aeglepagination>
 ```
 :::
 
@@ -76,18 +76,18 @@ icon: new
 <template>
   <div class="block">
     <span class="demonstration">显示总数</span>
-    <dl-pagination
+    <aeglepagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage1"
       :page-size="100"
       layout="total, prev, pager, next"
       :total="1000">
-    </dl-pagination>
+    </aeglepagination>
   </div>
   <div class="block">
     <span class="demonstration">调整每页显示条数</span>
-    <dl-pagination
+    <aeglepagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage2"
@@ -95,22 +95,22 @@ icon: new
       :page-size="100"
       layout="sizes, prev, pager, next"
       :total="1000">
-    </dl-pagination>
+    </aeglepagination>
   </div>
   <div class="block">
     <span class="demonstration">直接前往</span>
-    <dl-pagination
+    <aeglepagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page.sync="currentPage3"
       :page-size="100"
       layout="prev, pager, next, jumper"
       :total="1000">
-    </dl-pagination>
+    </aeglepagination>
   </div>
   <div class="block">
     <span class="demonstration">完整功能</span>
-    <dl-pagination
+    <aeglepagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
       :current-page="currentPage4"
@@ -118,7 +118,7 @@ icon: new
       :page-size="100"
       layout="total, sizes, prev, pager, next, jumper"
       :total="400">
-    </dl-pagination>
+    </aeglepagination>
   </div>
 </template>
 <script>
@@ -153,11 +153,11 @@ icon: new
 <div>
  <el-switch v-model="value">
  </el-switch>
- <dl-pagination
+ <aeglepagination
   :hide-on-single-page="value"
   :total="5"
   layout="prev, pager, next">
-</dl-pagination>
+</aeglepagination>
 </div>
 
 <script>

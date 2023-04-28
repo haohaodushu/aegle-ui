@@ -11,7 +11,7 @@ icon: new
 :::demo
 
 ```html
-<dl-empty description="描述文字"></dl-empty>
+<aegleempty description="描述文字"></aegleempty>
 ```
 :::
 
@@ -22,7 +22,7 @@ icon: new
 :::demo
 
 ```html
-<dl-empty image="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"></dl-empty>
+<aegleempty image="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"></aegleempty>
 ```
 :::
 
@@ -33,7 +33,7 @@ icon: new
 :::demo
 
 ```html
-<dl-empty :image-size="200"></dl-empty>
+<aegleempty :image-size="200"></aegleempty>
 ```
 :::
 
@@ -43,9 +43,9 @@ icon: new
 
 :::demo
 ```html
-<dl-empty>
+<aegleempty>
   <aegle-button type="primary">按钮</aegle-button>
-</dl-empty>
+</aegleempty>
 ```
 :::
 

@@ -10,7 +10,7 @@
 ::: code-group-item npm
 
 ```bash
-npm install douluo-ui -S
+npm install aegle-ui -S
 ```
 
 :::
@@ -18,7 +18,7 @@ npm install douluo-ui -S
 ::: code-group-item yarn
 
 ```bash
-yarn add douluo-ui -S
+yarn add aegle-ui -S
 ```
 
 :::
@@ -26,7 +26,7 @@ yarn add douluo-ui -S
 ::: code-group-item pnpm
 
 ```bash
-pnpm add douluo-ui
+pnpm add aegle-ui
 ```
 
 :::
@@ -37,10 +37,10 @@ pnpm add douluo-ui
 
 ```js
 import ElementUI from 'element-ui';
-import DouluoUI from 'douluo-ui';
+import aegleUI from 'aegle-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import 'douluo-ui/lib/css/index.css';
+import 'aegle-ui/lib/css/index.css';
 
 Vue.use(ElementUI);
-Vue.use(DouluoUI);
+Vue.use(aegleUI);
 ```

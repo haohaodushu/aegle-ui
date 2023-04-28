@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:JefferyXZF/douluo-ui.git master:gh-pages
+git push -f git@codeup.aliyun.com:61e929aa4b66e5c57455e758/tool/Aegle-UI.git master:gh-pages
 
 cd -

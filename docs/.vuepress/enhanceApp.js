@@ -4,7 +4,6 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import AegleUI from '../../src/index'
 import '../../styles/index.scss'
-import './styles/demo-styles/index.scss'
 import elIcons from '../../examples/assets/json/el-icon.json'
 import dlIcons from '../../examples/assets/json/dl-icon.json'
 
@@ -25,7 +24,5 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     // Vue.prototype.$dlIcons = dlIcons
     // window.oldTheme = '#FFAA00'
     // window.primarySecond = '#231909'
-    // window.$updateTheme = DouluoUI.updateUITheme
-    // Vue.prototype.$updateTheme = DouluoUI.updateTheme
   }
 };

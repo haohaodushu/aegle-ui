@@ -1,5 +1,5 @@
 
-const { config} = require('vuepress-theme-hope')
+const { config } = require('vuepress-theme-hope')
 const alias = require('../../config/alias');
 const guideRoutes = require('./sidebarRoutes/guide.js')
 const developerGuideRoutes = require('./sidebarRoutes/developer.js')
@@ -28,7 +28,6 @@ module.exports = config({
   },
   themeConfig: {
     // iconPrefix: 'icon-',
-    // repo: 'https://github.com/JefferyXZF/douluo-ui',
     // 配置顶部导航栏
     nav: [
       {
@@ -69,6 +68,9 @@ module.exports = config({
     mdEnhance: {
       codegroup: true
     },
+    themeColor: false,
+    darkmode: 'disable',
+    fullscreen: false,
     pageInfo: false,
   },
 

@@ -1,8 +1,8 @@
-import Dialog from './src/dialog.vue'
-import { createNamespace } from '../../../src/utils/use-namespace.js'
+import AegleDialog from './src/AegleDialog.vue';
 
-Dialog.install = (Vue, options = {}) => {
-  Vue.component(createNamespace('Dialog', { prefix: options.prefix }), Dialog)
+
+AegleDialog.install = (Vue, options = {}) => {
+  Vue.component(AegleDialog.name, AegleDialog);
 }
 
-export default Dialog
+export default AegleDialog;

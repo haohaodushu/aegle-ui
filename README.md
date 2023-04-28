@@ -1,6 +1,6 @@
-# douluo-ui 组件库
+# aegle-ui 组件库
 
-[基于 Element UI 封装的 Douluo UI 组件库](https://jefferyxzf.github.io/douluo-ui/)
+[基于 Element UI 封装的 aegle UI 组件库](https://jefferyxzf.github.io/aegle-ui/)
 
 ### 技术栈
 
@@ -41,7 +41,7 @@ npm publish
 目录结构使用 [mddir](https://www.npmjs.com/package/mddir) 插件生成
 
 ```html 
-|-- douluo-ui
+|-- aegle-ui
     |-- .cz-config.js           # cz-customizable commit message 规范
     |-- .editorconfig           # EditorConfig 配置
     |-- .eslintignore           # eslint 忽略检测文件
@@ -212,13 +212,13 @@ fork 项目到自己的本地仓库，克隆项目到本地
 
 
 ```shell
-git clone git@github.com:【账号】/douluo-ui.git
+git clone git@github.com:【账号】/aegle-ui.git
 ```
 
 添加源关联源仓库，暂且命名源为 `upstream`
 
 ```shell
-git remote add upstream git@github.com:JefferyXZF/douluo-ui.git
+git remote add upstream git@github.com:JefferyXZF/aegle-ui.git
 ```
 
 安装依赖，启动项目

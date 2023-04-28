@@ -3,12 +3,6 @@ module.exports = [
     title: 'Basic 基础',
     collapsable: false,
     children: [
-
-      {
-        title: 'Icon 图标',
-        collapsable: false,
-        path: '/packages/element/icon',
-      },
       {
         title: 'Button 按钮',
         collapsable: false,
@@ -77,11 +71,6 @@ module.exports = [
         title: 'Tag 标签',
         collapsable: false,
         path: '/packages/element/tag',
-      },
-      {
-        title: 'Progress 进度条',
-        collapsable: false,
-        path: '/packages/element/progress',
       },
       {
         title: 'Badge 标记',

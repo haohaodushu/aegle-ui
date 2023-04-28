@@ -14,7 +14,7 @@ Dialog 弹出一个对话框，适合需要定制性更大的场景。
 ```html
 <aegle-button type="text" @click="dialogVisible = true">点击打开 Dialog</aegle-button>
 
-<dl-dialog
+<aegle-dialog
   title="提示"
   :visible.sync="dialogVisible"
   width="40%"
@@ -24,7 +24,7 @@ Dialog 弹出一个对话框，适合需要定制性更大的场景。
     <aegle-button @click="dialogVisible = false">取 消</aegle-button>
     <aegle-button type="primary" @click="dialogVisible = false">确 定</aegle-button>
   </span>
-</dl-dialog>
+</aegle-dialog>
 
 <script>
   export default {
@@ -60,34 +60,34 @@ Dialog 组件的内容可以是任意的，甚至可以是表格或表单，下�
 <!-- Table -->
 <aegle-button type="text" @click="dialogTableVisible = true">打开嵌套表格的 Dialog</aegle-button>
 
-<dl-dialog title="收货地址" :visible.sync="dialogTableVisible">
-  <dl-table :data="gridData">
-    <dl-table-column property="date" label="日期" width="150"></dl-table-column>
-    <dl-table-column property="name" label="姓名" width="200"></dl-table-column>
-    <dl-table-column property="address" label="地址"></dl-table-column>
-  </dl-table>
-</dl-dialog>
+<aegle-dialog title="收货地址" :visible.sync="dialogTableVisible">
+  <aegletable :data="gridData">
+    <aegletable-column property="date" label="日期" width="150"></aegletable-column>
+    <aegletable-column property="name" label="姓名" width="200"></aegletable-column>
+    <aegletable-column property="address" label="地址"></aegletable-column>
+  </aegletable>
+</aegle-dialog>
 
 <!-- Form -->
 <aegle-button type="text" @click="dialogFormVisible = true">打开嵌套表单的 Dialog</aegle-button>
 
-<dl-dialog title="收货地址" :visible.sync="dialogFormVisible">
-  <dl-form :model="form">
-    <dl-form-item label="活动名称" :labdl-width="formLabelWidth">
+<aegle-dialog title="收货地址" :visible.sync="dialogFormVisible">
+  <aegleform :model="form">
+    <aegleform-item label="活动名称" :labaeglewidth="formLabelWidth">
       <aegle-input v-model="form.name" autocomplete="off"></aegle-input>
-    </dl-form-item>
-    <dl-form-item label="活动区域" :labdl-width="formLabelWidth">
+    </aegleform-item>
+    <aegleform-item label="活动区域" :labaeglewidth="formLabelWidth">
       <aegle-select v-model="form.region" placeholder="请选择活动区域">
-        <dl-option label="区域一" value="shanghai"></dl-option>
-        <dl-option label="区域二" value="beijing"></dl-option>
+        <aegleoption label="区域一" value="shanghai"></aegleoption>
+        <aegleoption label="区域二" value="beijing"></aegleoption>
       </aegle-select>
-    </dl-form-item>
-  </dl-form>
+    </aegleform-item>
+  </aegleform>
   <div slot="footer" class="dialog-footer">
     <aegle-button @click="dialogFormVisible = false">取 消</aegle-button>
     <aegle-button type="primary" @click="dialogFormVisible = false">确 定</aegle-button>
   </div>
-</dl-dialog>
+</aegle-dialog>
 
 <script>
   export default {
@@ -137,18 +137,18 @@ Dialog 组件的内容可以是任意的，甚至可以是表格或表单，下�
 <template>
   <aegle-button type="text" @click="outerVisible = true">点击打开外层 Dialog</aegle-button>
   
-  <dl-dialog title="外层 Dialog" :visible.sync="outerVisible">
-    <dl-dialog
+  <aegle-dialog title="外层 Dialog" :visible.sync="outerVisible">
+    <aegle-dialog
       width="40%"
       title="内层 Dialog"
       :visible.sync="innerVisible"
       append-to-body>
-    </dl-dialog>
+    </aegle-dialog>
     <div slot="footer" class="dialog-footer">
       <aegle-button @click="outerVisible = false">取 消</aegle-button>
       <aegle-button type="primary" @click="innerVisible = true">打开内层 Dialog</aegle-button>
     </div>
-  </dl-dialog>
+  </aegle-dialog>
 </template>
 
 <script>
@@ -173,7 +173,7 @@ Dialog 组件的内容可以是任意的，甚至可以是表格或表单，下�
 ```html
 <aegle-button type="text" @click="centerDialogVisible = true">点击打开 Dialog</aegle-button>
 
-<dl-dialog
+<aegle-dialog
   title="提示"
   :visible.sync="centerDialogVisible"
   width="40%"
@@ -183,7 +183,7 @@ Dialog 组件的内容可以是任意的，甚至可以是表格或表单，下�
     <aegle-button @click="centerDialogVisible = false">取 消</aegle-button>
     <aegle-button type="primary" @click="centerDialogVisible = false">确 定</aegle-button>
   </span>
-</dl-dialog>
+</aegle-dialog>
 
 <script>
   export default {

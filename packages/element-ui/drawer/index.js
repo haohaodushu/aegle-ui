@@ -1,8 +1,8 @@
-import Drawer from './src/drawer.vue'
-import { createNamespace } from '../../../src/utils/use-namespace.js'
+import AegleDrawer from './src/AegleDrawer.vue';
 
-Drawer.install = (Vue, options = {}) => {
-  Vue.component(createNamespace('Drawer', { prefix: options.prefix }), Drawer)
+
+AegleDrawer.install = (Vue, options = {}) => {
+  Vue.component(AegleDrawer.name, AegleDrawer);
 }
 
-export default Drawer
+export default AegleDrawer;

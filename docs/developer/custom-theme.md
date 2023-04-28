@@ -1,6 +1,6 @@
 ## 概述
 
-[douluo-ui 组件库](https://github.com/JefferyXZF/douluo-ui) 是基于 element-ui 实现的，那么实现换肤分两步；一是 `element-ui` 的换肤方案；二是 `douluo-ui组件库` 的换肤方案
+[aegle-ui 组件库](https://github.com/JefferyXZF/aegle-ui) 是基于 element-ui 实现的，那么实现换肤分两步；一是 `element-ui` 的换肤方案；二是 `aegle-ui组件库` 的换肤方案
 
 
 ## element-ui 的换肤
@@ -326,7 +326,7 @@ export const updateElementTheme = async function (options = {}) {
 
 
 ```js
-import { updateElementTheme } from 'douluo-ui'
+import { updateElementTheme } from 'aegle-ui'
 updateElementTheme({
   oldTheme,
   primaryColor
@@ -337,11 +337,11 @@ updateElementTheme({
 
 ```js
 
-import DouluoUI from 'douluo-ui'
+import aegleUI from 'aegle-ui'
 
 const initApp = async function () {
 
-  await DouluoUI.updateElementTheme({
+  await aegleUI.updateElementTheme({
     oldTheme,
     primaryColor
   })
@@ -359,7 +359,7 @@ initApp()
 ```js
 const initApp = async () => {
   try {
-    await DouluoUI.updateElementTheme({
+    await aegleUI.updateElementTheme({
       oldTheme,
       primaryColor
     })
@@ -423,7 +423,7 @@ export const updateUITheme = async function (options) {
 ![](https://files.mdnice.com/user/26477/92b0c972-d1f1-4947-abd0-5f0dbcd81b72.png)
 
 
-为了实现这种交换，在 [button-variant](https://github.com/JefferyXZF/douluo-ui/blob/develop/styles/src/mixins/_button.scss#L366-L380) 对 `primary` 类型做判断，定义一份新的数据结构，根据 button 组件的 css 自定义属性实现换肤，文件定义在 [update-ui-theme.js](https://github.com/JefferyXZF/douluo-ui/blob/develop/src/utils/update-ui-theme.js)
+为了实现这种交换，在 [button-variant](https://github.com/JefferyXZF/aegle-ui/blob/develop/styles/src/mixins/_button.scss#L366-L380) 对 `primary` 类型做判断，定义一份新的数据结构，根据 button 组件的 css 自定义属性实现换肤，文件定义在 [update-ui-theme.js](https://github.com/JefferyXZF/aegle-ui/blob/develop/src/utils/update-ui-theme.js)
 
 
 

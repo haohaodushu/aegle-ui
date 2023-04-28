@@ -13,13 +13,13 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag>我是标签</dl-tag>
+  <aegletag>我是标签</aegletag>
 </el-row>
 
 <el-row>
-  <dl-tag type="success">成功标签</dl-tag>
-  <dl-tag type="warning">等待中标签</dl-tag>
-  <dl-tag type="error">失败标签</dl-tag>
+  <aegletag type="success">成功标签</aegletag>
+  <aegletag type="warning">等待中标签</aegletag>
+  <aegletag type="error">失败标签</aegletag>
 </el-row>
 ```
 :::
@@ -32,13 +32,13 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag disabled>禁用标签</dl-tag>
+  <aegletag disabled>禁用标签</aegletag>
 </el-row>
 
 <el-row>
-  <dl-tag type="success" disabled>成功标签</dl-tag>
-  <dl-tag type="warning" disabled>等待中标签</dl-tag>
-  <dl-tag type="error" disabled>失败标签</dl-tag>
+  <aegletag type="success" disabled>成功标签</aegletag>
+  <aegletag type="warning" disabled>等待中标签</aegletag>
+  <aegletag type="error" disabled>失败标签</aegletag>
 </el-row>
 ```
 :::
@@ -49,13 +49,13 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag closable>可移除标签</dl-tag>
+  <aegletag closable>可移除标签</aegletag>
 </el-row>
 
 <el-row>
-  <dl-tag type="success" closable>成功标签</dl-tag>
-  <dl-tag type="warning" closable>等待中标签</dl-tag>
-  <dl-tag type="error" closable>失败标签</dl-tag>
+  <aegletag type="success" closable>成功标签</aegletag>
+  <aegletag type="warning" closable>等待中标签</aegletag>
+  <aegletag type="error" closable>失败标签</aegletag>
 </el-row>
 ```
 :::
@@ -66,13 +66,13 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag closable disabled>可移除标签</dl-tag>
+  <aegletag closable disabled>可移除标签</aegletag>
 </el-row>
 
 <el-row>
-  <dl-tag type="success" closable disabled>成功标签</dl-tag>
-  <dl-tag type="warning" closable disabled>等待中标签</dl-tag>
-  <dl-tag type="error" closable disabled>失败标签</dl-tag>
+  <aegletag type="success" closable disabled>成功标签</aegletag>
+  <aegletag type="warning" closable disabled>等待中标签</aegletag>
+  <aegletag type="error" closable disabled>失败标签</aegletag>
 </el-row>
 ```
 :::
@@ -83,12 +83,12 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag-group title="添加标签" :tagList="tagList" @close='close' @click='addClick'/>
+  <aegletag-group title="添加标签" :tagList="tagList" @close='close' @click='addClick'/>
 </el-row>
 <el-row>
-  <dl-tag-group  :tagList="['黄金糕', '双皮奶', '蚵仔煎']" >
+  <aegletag-group  :tagList="['黄金糕', '双皮奶', '蚵仔煎']" >
     <aegle-select v-model="value" placeholder="请选择"  :options="options"></aegle-select>
-  </dl-tag-group>
+  </aegletag-group>
 </el-row>
 
 <script>
@@ -136,7 +136,7 @@ icon: new
 
 ```html
 <el-row>
-  <dl-tag-group title="添加标签" disabled :tagList="tagList" />
+  <aegletag-group title="添加标签" disabled :tagList="tagList" />
 </el-row>
 
 
