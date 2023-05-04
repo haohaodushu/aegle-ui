@@ -29,6 +29,7 @@ import AegleSelect from 'packages/element-ui/select/index.js'
 
 import AegleTag from 'packages/business/tag/index'
 import AegleResult from 'packages/business/result/index'
+import AegleTitle from 'packages/business/title/index'
 
 const components = [
   AegleButton,
@@ -54,6 +55,7 @@ const components = [
   Tooltip,
   AegleTag,
   AegleResult,
+  AegleTitle,
 ]
 
 const install = (Vue, options = {}) => {

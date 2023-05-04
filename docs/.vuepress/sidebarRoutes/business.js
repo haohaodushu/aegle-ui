@@ -6,6 +6,7 @@ module.exports = [
       ['/packages/business/tag', 'aegle-tag'],
       ['/packages/business/alert', 'aegle-alert'],
       ['/packages/business/result', 'aegle-result'],
+      ['/packages/business/title', 'aegle-title'],
     ]
   }
 ]
