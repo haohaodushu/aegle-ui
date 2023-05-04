@@ -5,6 +5,7 @@ node_modules
 /lib
 /dist
 /styles/theme/**
+/docs/.vuepress/dist
 
 # local env files
 .env.local

@@ -13,7 +13,7 @@ module.exports = config({
     lineNumbers: true
   },
   lang: 'zh-CN',
-  base: '/aegle-ui/',
+  base: '/',
   head: [ // 网站标题栏的相关设置
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
