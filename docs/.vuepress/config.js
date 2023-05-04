@@ -106,5 +106,6 @@ module.exports = config({
   },
   chainWebpack: (config, isServer) => {
     // config 是 ChainableConfig 的一个实例
-  }
+  },
+  shouldPrefetch: false
 })
